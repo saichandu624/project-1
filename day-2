@@ -1,1 +1,13 @@
-
+provider "aws" {
+alias = "us-east-1"
+region ="us-east-1"
+}
+provider "aws"{
+alias = "us-west-2"
+region = "us-west-2"
+}
+resource "aws_instance" "day-2" {
+ami ="ami-047759859775775"
+instance_type ="t2.micro"
+provider ="aws.us-west-2"
+}
