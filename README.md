@@ -1,5 +1,5 @@
 # project-1
-P-1
+# day-1
 provider "aws" {
 region = "us-east-1"
 }
